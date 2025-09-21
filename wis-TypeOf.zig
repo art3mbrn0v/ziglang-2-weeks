@@ -1,6 +1,5 @@
 const std = @import("std");
-const print = std.debug.print;
-const expect = std.testing.expect;
+const print = @import("std").debug.print;
 
 pub fn main() !void {
     const str_slice: []const u8 = "Some text";
